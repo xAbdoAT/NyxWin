@@ -1,0 +1,86 @@
+# ======================================================================
+# NyxWin Git Ignore Rules
+# Developed by Abdo AT (@xAbdoAT)
+# ======================================================================
+
+# User Workspace Folders (Keeps folder structure in Git via .gitkeep, ignores all user projects & data)
+Projects/*
+!Projects/.gitkeep
+
+Output/*
+!Output/.gitkeep
+
+Cache/*
+!Cache/.gitkeep
+
+Backups/*
+!Backups/.gitkeep
+
+# Temporary / Scratch Folders
+Temp/
+temp/
+Temp Folder/
+tmp/
+scratch/
+
+# Build Packages & Artifacts
+*.ipa
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.o
+*.dylib
+*.a
+!tools/libclang_rt.ios.a
+!src/nyxwin/resources/tools/libclang_rt.ios.a
+
+# Apple SDKs (Downloaded and stored externally in %LOCALAPPDATA%\NyxWin\SDKs)
+sdk/
+
+# Compiler Caches & Codesigning Temps
+.cache/
+ModuleCache/
+.ldid.*
+.nyxwin/
+.nyxproject
+
+# Python Bytecode & Packaging Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+venv/
+env/
+/build/
+/dist/
+*.egg-info/
+.pytest_cache/
+
+# macOS Metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+__MACOSX/
+
+# Windows System Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# IDE & Editor Configuration
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.bak
+*.orig
+
+# Logs & Crash Dumps
+*.log
+*.dump
+*.crash
